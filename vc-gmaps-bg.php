@@ -38,6 +38,12 @@ function gmaps_scripts() {
 
 }
 
+// Shortcode Construct
+function bg_gmap( $atts ) {
+    return "<div id='googlemaps'></div>";
+}
+add_shortcode( 'bgmap', 'bg_gmap' );
+
 
 
 
