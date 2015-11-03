@@ -29,8 +29,8 @@ if ( is_admin() ) {
 add_action( 'wp_enqueue_scripts', 'gmaps_scripts', 16 );
 function gmaps_scripts() {
 
-	wp_register_style( 'gmaps-css', plugin_dir_url( $file ); . '/css/gmaps-style.css' );
-	wp_register_script( 'gmaps-script', plugin_dir_url( $file ); . '/js/gmaps.js' );
+	wp_register_style( 'gmaps-css', plugin_dir_url( $file ) . '/css/gmaps-style.css' );
+	wp_register_script( 'gmaps-script', plugin_dir_url( $file ) . '/js/gmaps.js' );
 	wp_register_script( 'gmaps-api', 'http://maps.googleapis.com/maps/api/js?sensor=false' );
 	wp_enqueue_style( 'gmaps-css' );
 	wp_enqueue_script( 'gmaps-api' );
