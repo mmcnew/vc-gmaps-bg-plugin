@@ -2,11 +2,11 @@
 
 /*
 *    Update Plugin
-*    @package VC Site Maintenance Plugin
-*    Since version 1.04
+*    @package VC Google Maps Background Plugin
+*    Since version 1.0
 */
 
-class VC_Plugin_Updater {
+class VCMaps_Plugin_Updater {
  
     private $slug; // plugin slug
     private $pluginData; // plugin data
