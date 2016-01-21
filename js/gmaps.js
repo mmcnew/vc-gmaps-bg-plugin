@@ -1,4 +1,4 @@
- var position = [33.958827, -117.639830];
+
      
     function showGoogleMaps() {
      

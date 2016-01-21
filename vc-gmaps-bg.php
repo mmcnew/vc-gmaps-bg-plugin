@@ -40,7 +40,11 @@ function gmaps_scripts() {
 
 // Shortcode Construct
 function bg_gmap( $atts ) {
-    return "<div id='googlemaps'></div>";
+    return "<script> var position = [33.958827, -117.639830];</script>
+	<div id='googlemaps'></div>";
+	shortcode_atts ( array (
+		'position' =>  '33.958827, -117.639830',
+		), $atts );
 }
 add_shortcode( 'bgmap', 'bg_gmap' );
 
