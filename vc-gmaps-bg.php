@@ -43,7 +43,7 @@ function bg_gmap( $atts ) {
 	$a = shortcode_atts ( array (
 		'pos' =>  '33.958827, -117.639830',
 		), $atts );
-    return '<script type="text/javascript"> var position = [{$a["pos"]}];</script>
+    return '<script type="text/javascript"> var position = [' . "{$a['pos']}" . '];</script>
 	<div id="googlemaps"></div>';
 }
 add_shortcode( 'bgmap', 'bg_gmap' );
