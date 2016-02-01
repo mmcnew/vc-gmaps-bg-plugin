@@ -45,7 +45,10 @@ function bg_gmap( $atts ) {
 		'color' => 'transparent'
 		), $atts );
     return '<script type="text/javascript"> var position = [' . "{$a['pos']}" . '];</script>
-	<div id="googlemaps"><div class="cover" style="background-color:' . "{$a['color']}" . ';"></div></div>';
+	<div id="vcmap">
+		<div id="googlemaps"></div>
+		<div class="cover" style="background-color:' . "{$a['color']}" . ';"></div>
+	</div>';
 }
 add_shortcode( 'bgmap', 'bg_gmap' );
 
