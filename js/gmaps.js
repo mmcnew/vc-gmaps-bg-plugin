@@ -8,7 +8,8 @@
             streetViewControl: false, // hide the yellow Street View pegman
             scaleControl: false, // allow users to zoom the Google Map
             mapTypeId: google.maps.MapTypeId.ROADMAP,
-            center: latLng
+            center: latLng,
+			zoom: zoomLvl
         };
      
         map = new google.maps.Map(document.getElementById('googlemaps'),

@@ -45,7 +45,7 @@ function bg_gmap( $atts ) {
 		'color' => 'transparent',
 		'zoom' => '18'
 		), $atts );
-    return '<script type="text/javascript"> var position = [' . "{$a['pos']}" . ']; var zoom = [' . "{$a['zoom']}" . '];</script>
+    return '<script type="text/javascript"> var position = [' . "{$a['pos']}" . ']; var zoomLvl = [' . "{$a['zoom']}" . '];</script>
 	<div id="vcmap">
 		<div id="googlemaps"></div>
 		<div class="cover" style="background-color:' . "{$a['color']}" . ';"></div>
