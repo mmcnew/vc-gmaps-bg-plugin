@@ -3,7 +3,7 @@
   Plugin Name: VC GMaps Background Section
   Plugin URI: http://www.visceralconcepts.com
   Description: A shortcode to add the Google Map of the company's location  to the bacground of any section.
-  Version: 1.13
+  Version: 1.14
   Author: Visceral Concepts
   Author URI: http://www.visceralconcepts.com
   License: GPLv3 or Later
@@ -41,7 +41,7 @@ function gmaps_scripts() {
 // Shortcode Construct
 function bg_gmap( $atts ) {
 	$a = shortcode_atts ( array (
-		'pos' =>  '33.958827, -117.639830',
+		'pos' =>  '33.957194, -117.6135',
 		'color' => 'transparent',
 		'zoom' => '18'
 		), $atts );
